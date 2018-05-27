@@ -1,0 +1,13 @@
+<h1>Games#score</h1>
+<p>Find me in app/views/games/score.html.erb</p>
+
+<div class="container">
+  <% if !@exists %>
+    <p>Dude, your word doesn't even use the right letters</p>
+    <% elsif !@response["found"]%>
+    <p>This isn't a real word, try again</p>
+    <% else %>
+      <p>Score: <%= @response["length"] %></p>
+  <% end %>
+
+</div>
